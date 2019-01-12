@@ -63,19 +63,50 @@ font-weight: lighter;
 
 /*Desktop Navigation menu*/
 
-nav .desktop{
+ .desktop{
 
 }
 .menu{
   list-style: none;
   display: flex;
 }
+.menu li{
+  padding-left: 16px;
+}
+.menu li a{
+  color: black;
+}
 /*mobile-nav*/
 .mobile{
   display: none;
+}
+.mobilenav{
   list-style: none;
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  justify-content: flex-end;
+
 }
 
+.mobilenav li {
+  padding-left: 20%;
+}
+@media only screen and (max-width: 600px){
+  .desktop{
+    display: none;
+  }
+  .title{
+    display: none;
+  }
+  .menu{
+    display: none;
+  }
+  .mobile{
+    display: flex;
+    flex-grow: 1;
+  }
+}
 /*main banner*/
 .container{
   display: flex;
