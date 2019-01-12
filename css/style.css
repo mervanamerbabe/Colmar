@@ -1,0 +1,158 @@
+/*Universal Styles*/
+html{
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+}
+body{
+  line-height: 1;
+   margin-left: 0;
+   margin-right: 0;
+   margin-top: 0;
+   margin-bottom: 0;
+}
+
+}
+h4, h5{
+  font-family: "Vollcorn", sans-serif;
+}
+
+a{
+  text-decoration: none;
+  color: blue;
+}
+/*Header*/
+Header{
+   display: flex;
+   flex-direction: row;
+   height: 64px;
+   justify-content: space-between;
+   align-items: center;
+   padding-right: 24px;
+   padding-left: 24px;
+
+}
+
+/*Navigation Bar*/
+
+/*logo section*/
+.logo{
+  display: flex;
+  align-items: center;
+}
+
+.logo-image{
+  height: 32px;
+  width: auto;
+  padding-right: 5px;
+}
+
+.title {
+  text-transform: uppercase;
+}
+
+
+.company{
+color: #0C090A;
+font-weight: bold;
+}
+
+.name{
+color: #6D7B8D;
+font-weight: lighter;
+}
+
+/*Desktop Navigation menu*/
+
+nav .desktop{
+
+}
+.menu{
+  list-style: none;
+  display: flex;
+}
+/*mobile-nav*/
+.mobile{
+  display: none;
+  list-style: none;
+}
+
+/*main banner*/
+.container{
+  display: flex;
+  background-color: #b299cc;
+  flex-direction: row;
+  align-items: center;
+}
+/*main banner container*/
+.main-banner{
+  background-color: #b299cc;
+}
+
+/*main banner image container*/
+
+.main-image{
+  width: 60%;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+/*main banner headline section*/
+.headline-section {
+
+  flex-direction: column;
+  justify-content: center;
+  margin-right: 3rem;
+}
+
+
+/*main banner button*/
+ button {color: rgb(147, 190, 122); font-size: 19px; line-height: 19px; padding: 16px; border-radius: 24px; font-family: Georgia, serif; font-weight: normal; text-decoration: none; font-style: normal; font-variant: normal; text-transform: none; background-image: linear-gradient(to right, rgb(28, 110, 164) 0%, rgb(35, 136, 203) 50%, rgb(20, 78, 117) 100%); box-shadow: rgb(0, 0, 0) 5px 5px 15px 5px; border: 2px solid rgb(28, 110, 164); display: inline-block;}
+
+/*articles section*/
+
+
+/*main article image*/
+
+
+/*main article headline & paragraph*/
+
+
+/*article column container*/
+
+.article-flex{
+  display: flex;
+}
+/*article 1*/
+
+/*article 2*/
+
+/*article 3*/
+.article3{
+  background-color: #efeaf4;
+}
+
+/*courses section*/
+
+.course-container{
+  background-color: #e0d6ea;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column wrap;
+  align-content: stretch;
+}
+h3{
+
+}
+
+.courses{
+  background-color: white;
+}
+
+/*Thesis section*/
+
+
+
+/*footer*/
