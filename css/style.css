@@ -7,6 +7,9 @@ body{
   line-height: 1;
 }
 
+div .content{
+  display: flex;
+}
 }
 h4, h5{
   font-family: "Vollcorn", sans-serif;
@@ -37,23 +40,6 @@ a:active {
  color: #339966;
 }
 
-/*messing w mav tansitions
-a{
-  text-decoration: none;
-  color: #669933;
-}
-
-a.read {
-  color: slateblue;
-  transition-property: color;
-  transition-duration: 300ms;
-  timing-function: ease-out;
-  transition-delay: 100ms;
-}
-
-a.read:hover {
-  text-decoration: underline ;
-}
 
 /*Header*/
 Header{
@@ -69,7 +55,7 @@ Header{
 
 /*Navigation Bar*/
 
-/*logo section*/
+/*logo*/
 .logo{
   display: flex;
   align-items: center;
@@ -148,45 +134,79 @@ Header{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  top: 4rem;
   position: relative;
-  background-color: #b299cc
+  background-color: #b299cc;
+
 }
 /*main banner container*/
 .main-banner{
   display: flex;
   background-color: #b299cc;
+  align-items: center;
+
 }
 /*main banner image container*/
 
 .main-image{
-  width: 60%;
-  padding: 2rem 1rem;
+  padding: 1rem 1rem;
+  margin-right: auto;
 }
 
 /*main banner headline*/
 .headline-content {
   width: 40%;
-    height: 18rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-start;
-    padding: 5% 10% 5% 0;
-position: relative;
+  height: 18rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #b299cc;
+  position: relative;
+  padding-left: 2rem;
+
 }
 
-.headline {
-  width: 40%;
+.slogan {
+  font-size: 2rem;
   margin-right: 3rem;
   padding-left: 24px;
   justify-content: flex-end;
+  line-height: 1.5rem;
+}
+h1 {
+  font-size: 2rem;
+  font-weight: bold;
 }
 
+p {
+  font-size: 1.5rem;
+  font-weight: bold;
+  line-height: 2rem;
+}
+/*
 /*main banner button*/
-button {color: rgb(147, 190, 122); font-size: 19px; line-height: 19px; padding: 16px; border-radius: 24px; font-family: Georgia, serif; font-weight: normal; text-decoration: none; font-style: normal; font-variant: normal; text-transform: none; background-image: linear-gradient(to right, rgb(28, 110, 164) 0%, rgb(35, 136, 203) 50%, rgb(20, 78, 117) 100%); box-shadow: rgb(0, 0, 0) 5px 5px 15px 5px; border: 2px solid rgb(28, 110, 164); display: inline-block;}
 
-/*articles section*/
+
+button {
+  color: rgb(147, 190, 122);
+  font-size: 19px;
+  line-height: 19px;
+  padding: 16px;
+  font-family: Georgia, serif;
+  font-weight: normal;
+  text-decoration: none;
+  font-style: normal;
+  font-variant: normal;
+  text-transform: none;
+  background-image: linear-gradient(to right, rgb(28, 110, 164) 0%, rgb(35, 136, 203) 50%, rgb(20, 78, 117) 100%);
+  box-shadow: rgb(0, 0, 0) 5px 5px 15px 5px;
+  border: 2px solid rgb(28, 110, 164);
+  display: inline-block;
+}
+
+
+/*commenting out button styling to debug page commenting this out so I can complete the top
+
+*//*articles section
 
 
 /*main article image*/
@@ -197,9 +217,7 @@ button {color: rgb(147, 190, 122); font-size: 19px; line-height: 19px; padding: 
 
 /*article column container*/
 
-.article-flex{
 
-}
 /*article 1*/
 
 /*article 2*/
