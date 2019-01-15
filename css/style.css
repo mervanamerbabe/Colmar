@@ -148,7 +148,7 @@ Header{
 /*main banner image container*/
 
 .main-image{
-  padding: 1rem 1rem;
+  padding: 32px 24px;
   margin-right: auto;
 }
 
@@ -163,6 +163,7 @@ Header{
   position: relative;
   padding-left: 2rem;
 
+
 }
 
 .slogan {
@@ -170,15 +171,17 @@ Header{
   margin-right: 3rem;
   padding-left: 24px;
   justify-content: flex-end;
-  line-height: 1.5rem;
-}
-h1 {
-  font-size: 2rem;
-  font-weight: bold;
+
 }
 
-p {
-  font-size: 1.5rem;
+ h1 {
+  font-size: 3rem;
+  font-weight: bold;
+
+}
+
+ p {
+
   font-weight: bold;
   line-height: 2rem;
 }
@@ -190,7 +193,7 @@ button {
   color: rgb(147, 190, 122);
   font-size: 19px;
   line-height: 19px;
-  padding: 16px;
+  padding: 8px;
   font-family: Georgia, serif;
   font-weight: normal;
   text-decoration: none;
@@ -200,26 +203,58 @@ button {
   background-image: linear-gradient(to right, rgb(28, 110, 164) 0%, rgb(35, 136, 203) 50%, rgb(20, 78, 117) 100%);
   box-shadow: rgb(0, 0, 0) 5px 5px 15px 5px;
   border: 2px solid rgb(28, 110, 164);
+  width: 60%;
   display: inline-block;
 }
 
+/*articles section*/
 
-/*commenting out button styling to debug page commenting this out so I can complete the top
-
-*//*articles section
-
+.article-flex{
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 32px;
+}
 
 /*main article image*/
+.main-article img{
+  width: 66%;
 
+  padding: 32px 24px;
+
+}
 
 /*main article headline & paragraph*/
+.main-article-writing{
+
+
+}
+
+h3{
+  font-size: 2rem;
+  font-weight: bold;
+  padding-bottom: 32px;
+}
+.maing-article-writing. p{
+  font-weight: normal;
+}
+.author {
+  font-size: 1rem;
+}
 
 
 /*article column container*/
-
+.flex{
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  padding-top: 32px;
+}
 
 /*article 1*/
-
+ .article1 img{
+   width: 35%;
+   height: auto;
+ }
 /*article 2*/
 
 /*article 3*/
