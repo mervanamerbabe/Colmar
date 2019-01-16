@@ -80,7 +80,7 @@ Header{
 }
 
 .company{
-  color: ;
+  color: #23236b;
   font-weight: bold;
 }
 
@@ -297,8 +297,9 @@ h3{
   color: darkslategrey;
   padding: 2rem 0;
   margin: 0;
-  border-left: 2px solid gainsboro;
+  border-left: 2px solid #D8BFD8;
   justify-content: space-around;
+
 }
 
 /*article 1*/
@@ -326,11 +327,14 @@ h3{
 }
 
 /*article 3*/
+.article3 {
+  background-color: #eaeaf4;
+}
 .article3 img{
-  width: 35%;
+  width: 40%;
   height: auto;
   margin: 0rem 1rem 1rem 1rem;
-  background-color: #eaeaf4;
+
 }
 
 .article3-text{
@@ -339,7 +343,7 @@ h3{
 
 /*Learning*/
 
-.learning{
+div .learning {
   background-color: #d6d6ea;
   display: flex;
   flex-direction: column;
@@ -365,12 +369,13 @@ h3{
   flex-direction: row;
 }
 
-.subject{
-  background-color: whitesmoke;
+/*.subject{
+  background-color: #E6E6FA;
   padding-bottom: 1.5rem;
-}
+}*/
 
 /* Margins for course boxes */
+
 .software-engineering, .data{
   margin-right: 1rem;
   margin-bottom: 2rem;
@@ -394,11 +399,10 @@ h3{
   margin-top: 1rem;
   margin-left: 1rem;
   font-size: 2rem;
-  color: darkslategray;
+  color: #5b892d;
 }
 
 .subject h3{
-  margin-top: .5rem;
   margin-left: 1rem;
   font-size: 1.8rem;
   font-weight: normal;
@@ -466,7 +470,7 @@ h3{
   margin-bottom: 2rem;
   text-align: center;
   font-size: 3rem;
-  color: darkslategrey;
+  color: #663399;
 
 }
 .video{
@@ -525,7 +529,7 @@ h3{
 }
 
 .sidebar-text h2{
-  color: darkslategrey;
+  color: #23236b;
   font-size: 1.5rem;
   font-weight: bold;
   margin-bottom: .5rem;
@@ -533,7 +537,7 @@ h3{
 
 .sidebar-text h3{
   font-size: 1.2rem;
-  color: slategray;
+  color: #9370b7;
   font-weight: lighter;
   margin-bottom: .5rem;
 }
@@ -569,7 +573,7 @@ h3{
   }
 
   .reimagine h2{
-    color: darkslategrey;
+    color:#9370b7;
     padding-top: 24px;
     margin-bottom: .5rem;
   }
@@ -577,7 +581,7 @@ h3{
   .reimagine p{
     font-size: 1.3rem;
     margin-right: 2rem;
-    color: slategray;
+    color: #663399;
   }
 
   /*footer*/
@@ -586,7 +590,7 @@ h3{
     margin-left: 1.5rem;
     margin-top: 2rem;
     padding-top: 1rem;
-    color: slategray;
+    color: #663399;
     border-top: 2px solid gainsboro;
     justify-content: space-between;
     text-align: right;
