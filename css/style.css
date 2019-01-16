@@ -5,7 +5,7 @@ html{
 }
 body{
   line-height: 1;
-  color: #1e2d0f;
+  color: #23236b;
 }
 
 div .content{
@@ -22,7 +22,7 @@ h2{
   font-weight: bold;
 }
 h4, h5{
-  font-family: "Vollcorn", sans-serif;
+  font-family: "Vollkorn", sans-serif;
 }
 
 a{
@@ -37,7 +37,7 @@ a:link {
 
 /* visited link */
 a:visited {
-  color: hotpink;
+  color: #993399;
 }
 
 /* mouse over link */
@@ -80,7 +80,7 @@ Header{
 }
 
 .company{
-  color: #0C090A;
+  color: ;
   font-weight: bold;
 }
 
@@ -138,13 +138,12 @@ Header{
   align-items: center;
   justify-content: space-between;
   position: relative;
-  background-color: #b299cc;
-
+  background-color: #c1c1e0;
 }
 /*main banner container*/
 .main-banner{
   display: flex;
-  background-color: #b299cc;
+  background-color: #c1c1e0;
   align-items: center;
 }
 /*main banner image container*/
@@ -158,10 +157,9 @@ Header{
 .headline-content {
   width: 40%;
   height: 18rem;
-  display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-color: #b299cc;
+  background-color: #c1c1e0;
   position: relative;
   padding-left: 2rem;
 }
@@ -181,6 +179,7 @@ h1 {
 p {
   font-weight: bold;
   line-height: 2rem;
+  padding-bottom: 1.5rem;
 }
 
 /*main banner button*/
@@ -204,7 +203,8 @@ button {
 }
 
 /** media query for mobile banner  ***/
-@media only screen and (max-width: 450px){
+
+@media only screen and (max-width: 450px) {
 
   .main-banner{
     display: flex;
@@ -216,6 +216,7 @@ button {
     width: 100%;
     margin:0 0 2rem 0;
     padding:0;
+    flex-grow: 2;
   }
 
   .slogan{
@@ -223,16 +224,15 @@ button {
     margin-right: 0;
     font-size: 1.5rem;
   }
-
+  .headline-content {
+    margin-top: 1rem;
+    padding-bottom: 3rem;
+  }
   .slogan h1{
     font-size: 1.5rem;
     margin-left: 1rem;
   }
 
-  .headline-content {
-    margin-top: 1rem;
-    padding-bottom: 3rem;
-  }
   .slogan p{
     margin-left: 1rem;
     margin-bottom: 0;
@@ -241,11 +241,10 @@ button {
   .startbutton{
     margin: 1.5rem 1rem 2rem 1rem;
   }
-
 }
 /* End of mobile banner **/
 
-/************ articles ****************/
+/* articles  */
 
 .article-flex{
   display: flex;
@@ -267,11 +266,6 @@ button {
   width: 100%;
   padding: 0;
   margin: 0;
-}
-
-/*width: 70%;
-padding: 32px 24px;
-
 }
 
 /*main article headline & paragraph*/
@@ -304,7 +298,7 @@ h3{
   padding: 2rem 0;
   margin: 0;
   border-left: 2px solid gainsboro;
-
+  justify-content: space-around;
 }
 
 /*article 1*/
@@ -322,8 +316,8 @@ h3{
 .article1-text{
 
 }
-/*article 2*/
 
+/*article 2*/
 
 .article2 img{
   width: 35%;
@@ -331,26 +325,22 @@ h3{
   margin: 0rem 1rem 1rem 1rem;
 }
 
-.article2-text {
-
-}
 /*article 3*/
 .article3 img{
   width: 35%;
   height: auto;
   margin: 0rem 1rem 1rem 1rem;
-  background-color: #efeaf4;
+  background-color: #eaeaf4;
 }
 
 .article3-text{
 
 }
 
-
-/*Start Learning*/
+/*Learning*/
 
 .learning{
-  background-color: rgb(234,235,236);
+  background-color: #d6d6ea;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -361,13 +351,13 @@ h3{
   margin-bottom: 2rem;
   text-align: center;
   font-size: 3rem;
-  color: darkslategrey;
+  color: #23236b;
 }
 
 .top-class-set{
   display: flex;
   flex-direction: row;
-
+  color: #23236b;
 }
 
 .bottom-class-set{
@@ -378,9 +368,9 @@ h3{
 .subject{
   background-color: whitesmoke;
   padding-bottom: 1.5rem;
-  background-color: whitesmoke;
 }
-/*** Margins for the course boxes */
+
+/* Margins for course boxes */
 .software-engineering, .data{
   margin-right: 1rem;
   margin-bottom: 2rem;
@@ -401,26 +391,27 @@ h3{
   margin-bottom: 2rem;
 }
 .subject h2{
-  margin-top: 1rem;    /** From Redline spec */
-  margin-left: 1rem;  /** From Redline spec */
+  margin-top: 1rem;
+  margin-left: 1rem;
   font-size: 2rem;
   color: darkslategray;
 }
 
 .subject h3{
   margin-top: .5rem;
-  margin-left: 1rem; /** From Redline spec */
+  margin-left: 1rem;
   font-size: 1.8rem;
   font-weight: normal;
   color: slategray;
 }
 
 .subject p{
-  margin-left: 1rem; /** From Redline spec */
+  margin-left: 1rem;
   color: slategray;
   font-size: 1.5rem;
-  margin-top:.5rem; /** From Redline spec */
+  margin-top:.5rem;
   margin-bottom: .5rem;
+  color: #7547a3;
 }
 
 /** turn off mobile learning html */
@@ -428,7 +419,7 @@ h3{
   display:none;
 }
 
-/* Add Mobile Learning Section */
+/* Mobile Learning Section */
 @media only screen and (max-width: 450px){
 
   .learning.desktop{
@@ -437,10 +428,7 @@ h3{
 
   .learning.mobile{
     width: 100%;
-    background-color: rgb(234,235,236);
-    /*  display: flex;
-    flex-direction: column;
-    align-items: stretch;*/
+    background-color: #23236b;
     display: block;
     padding: 0;
     margin: 0 0 1.5rem 0;
@@ -465,24 +453,6 @@ h3{
   }
 
 }
-
-/*
-.course-container {
-background-color: #efeaf4;
-display: flex;
-flex-direction: column;
-align-items: center;
-padding: 0 4.5rem 2rem 4.5rem;
-}
-/*.course-container{
-
-background-color: #e0d6ea;
-display: flex;
-align-items: center;
-justify-content: center;
-flex-flow: column wrap;
-align-content: stretch;
-}*/
 
 /*Thesis section*/
 .thesis{
@@ -526,7 +496,7 @@ align-content: stretch;
 }
 .thesis-fisma{
   display: flex;
-  background-color: #efeaf4;;
+  background-color: #d6d6ea;
 }
 
 .thesis-now-and-then{
@@ -577,7 +547,7 @@ align-content: stretch;
 
 }
 
-/*** mobile for thesis exhibits and reimagine urban***/
+/** mobile for thesis exhibits and reimagine urban**/
 
 @media only screen and (max-width: 450px){
 
