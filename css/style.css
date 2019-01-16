@@ -50,7 +50,6 @@ a:active {
   color: #339966;
 }
 
-
 /*Header*/
 Header{
   display: flex;
@@ -61,7 +60,6 @@ Header{
   padding-right: 24px;
   padding-left: 24px;
 }
-
 
 /*Navigation Bar*/
 
@@ -81,7 +79,6 @@ Header{
   text-transform: uppercase;
 }
 
-
 .company{
   color: #0C090A;
   font-weight: bold;
@@ -94,9 +91,6 @@ Header{
 
 /*Desktop Navigation menu*/
 
-.desktop{
-
-}
 .menu{
   list-style: none;
   display: flex;
@@ -118,7 +112,6 @@ Header{
   flex-direction: row;
   flex-grow: 1;
   justify-content: flex-end;
-
 }
 
 .mobilenav li {
@@ -153,7 +146,6 @@ Header{
   display: flex;
   background-color: #b299cc;
   align-items: center;
-
 }
 /*main banner image container*/
 
@@ -172,8 +164,6 @@ Header{
   background-color: #b299cc;
   position: relative;
   padding-left: 2rem;
-
-
 }
 
 .slogan {
@@ -181,23 +171,19 @@ Header{
   margin-right: 3rem;
   padding-left: 24px;
   justify-content: flex-end;
-
 }
 
 h1 {
   font-size: 3rem;
   font-weight: bold;
-
 }
 
 p {
-
   font-weight: bold;
   line-height: 2rem;
 }
-/*
-/*main banner button*/
 
+/*main banner button*/
 
 button {
   color: rgb(147, 190, 122);
@@ -217,7 +203,49 @@ button {
   display: inline-block;
 }
 
-/*articles section*/
+/** media query for mobile banner  ***/
+@media only screen and (max-width: 450px){
+
+  .main-banner{
+    display: flex;
+    flex-direction: column;
+    width: 100%
+  }
+
+  .main-banner img{
+    width: 100%;
+    margin:0 0 2rem 0;
+    padding:0;
+  }
+
+  .slogan{
+    display: inline-flex;
+    margin-right: 0;
+    font-size: 1.5rem;
+  }
+
+  .slogan h1{
+    font-size: 1.5rem;
+    margin-left: 1rem;
+  }
+
+  .headline-content {
+    margin-top: 1rem;
+    padding-bottom: 3rem;
+  }
+  .slogan p{
+    margin-left: 1rem;
+    margin-bottom: 0;
+  }
+
+  .startbutton{
+    margin: 1.5rem 1rem 2rem 1rem;
+  }
+
+}
+/* End of mobile banner **/
+
+/************ articles ****************/
 
 .article-flex{
   display: flex;
@@ -241,8 +269,8 @@ button {
   margin: 0;
 }
 
-  /*width: 70%;
-  padding: 32px 24px;
+/*width: 70%;
+padding: 32px 24px;
 
 }
 
@@ -278,63 +306,70 @@ h3{
   border-left: 2px solid gainsboro;
 
 }
-/*
-.flex{
-width: 40%;
-display: flex;
-flex-direction: column;
-padding-top: 32px;
-border-left: 1px solid #DCDCDC;
-width: 440px;
-}
-}
 
 /*article 1*/
+.article1,
+.article2,
+.article3 {
+  display: flex;
+  align-items: center;
+}
 .article1 img{
   width: 35%;
   height: auto;
   margin: 0rem 1rem 1rem 1rem;
 }
+.article1-text{
 
+}
 /*article 2*/
 
+
+.article2 img{
+  width: 35%;
+  height: auto;
+  margin: 0rem 1rem 1rem 1rem;
+}
+
+.article2-text {
+
+}
 /*article 3*/
-.article3{
+.article3 img{
+  width: 35%;
+  height: auto;
+  margin: 0rem 1rem 1rem 1rem;
   background-color: #efeaf4;
 }
 
-/*courses section*/
-/**** Start Learning Section ***/
-/*** Design is One flex container that is a column  - .learning */
-/*** Title is top element */
-/*** top-class-set is middle element */
-/*** bottom-class-set is bottom element */
+.article3-text{
 
-/* Each class-set is also a row flex container */
+}
 
+
+/*Start Learning*/
 
 .learning{
   background-color: rgb(234,235,236);
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0 4.5rem 2rem 4.5rem;  /** redline spec 72px side margin */
-
 }
 
 .learning h1{
-  margin-top: 2rem;  /* Redline spec */
-  margin-bottom: 2rem;  /*Redline spec  */
+  margin-top: 2rem;
+  margin-bottom: 2rem;
   text-align: center;
   font-size: 3rem;
   color: darkslategrey;
-
 }
 
 .top-class-set{
   display: flex;
   flex-direction: row;
+
 }
+
 .bottom-class-set{
   display: flex;
   flex-direction: row;
@@ -349,7 +384,6 @@ width: 440px;
 .software-engineering, .data{
   margin-right: 1rem;
   margin-bottom: 2rem;
-
 }
 
 .computer-art, .business{
@@ -389,60 +423,56 @@ width: 440px;
   margin-bottom: .5rem;
 }
 
-
 /** turn off mobile learning html */
 .learning.mobile{
   display:none;
 }
 
-
 /* Add Mobile Learning Section */
 @media only screen and (max-width: 450px){
 
-    .learning.desktop{
-      display:none;
-    }
+  .learning.desktop{
+    display:none;
+  }
 
-    .learning.mobile{
-        width: 100%;
-        background-color: rgb(234,235,236);
-      /*  display: flex;
-        flex-direction: column;
-        align-items: stretch;*/
-        display: block;
-        padding: 0;
-        margin: 0 0 1.5rem 0;
-      }
-      .learning h1{
-        margin-top: 2rem;
-        padding-top: 1rem;
-        text-align: center;
-        font-size: 3rem;
-        color: darkslategrey;
-        margin-bottom: 1rem;
-      }
+  .learning.mobile{
+    width: 100%;
+    background-color: rgb(234,235,236);
+    /*  display: flex;
+    flex-direction: column;
+    align-items: stretch;*/
+    display: block;
+    padding: 0;
+    margin: 0 0 1.5rem 0;
+  }
+  .learning h1{
+    margin-top: 2rem;
+    padding-top: 1rem;
+    text-align: center;
+    font-size: 3rem;
+    color: darkslategrey;
+    margin-bottom: 1rem;
+  }
 
-
-    .learning.mobile h2{
-        font-weight: normal;
-        font-size: 1.5rem;
-        margin-left: 1rem;
-        margin-right: 1rem;
-        padding: 1rem 0 1.5rem 1rem;
-        background-color: gainsboro;
-        margin-bottom: .5rem;
-    }
+  .learning.mobile h2{
+    font-weight: normal;
+    font-size: 1.5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    padding: 1rem 0 1.5rem 1rem;
+    background-color: gainsboro;
+    margin-bottom: .5rem;
+  }
 
 }
 
-
 /*
 .course-container {
-  background-color: #efeaf4;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 0 4.5rem 2rem 4.5rem;
+background-color: #efeaf4;
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 0 4.5rem 2rem 4.5rem;
 }
 /*.course-container{
 
@@ -453,7 +483,6 @@ justify-content: center;
 flex-flow: column wrap;
 align-content: stretch;
 }*/
-
 
 /*Thesis section*/
 .thesis{
@@ -518,7 +547,6 @@ align-content: stretch;
   padding: 0;
 }
 
-
 .sidebar-text{
   display: flex;
   flex-direction: column;
@@ -532,6 +560,7 @@ align-content: stretch;
   font-weight: bold;
   margin-bottom: .5rem;
 }
+
 .sidebar-text h3{
   font-size: 1.2rem;
   color: slategray;
@@ -559,34 +588,40 @@ align-content: stretch;
   .video {
     width: 100%;
   }
-/*reimagine*/
 
-.reimagine {
+  /*reimagine*/
+
+  .reimagine {
     display:none;
     width: 60%;
     margin-left: 1.5rem;
     margin-top: 1.5rem;
-}
+  }
 
-.reimagine h2{
-  color: darkslategrey;
-  padding-top: 24px;
-  margin-bottom: .5rem;
-}
+  .reimagine h2{
+    color: darkslategrey;
+    padding-top: 24px;
+    margin-bottom: .5rem;
+  }
 
-.reimagine p{
-  font-size: 1.3rem;
-  margin-right: 2rem;
-  color: slategray;
-}
+  .reimagine p{
+    font-size: 1.3rem;
+    margin-right: 2rem;
+    color: slategray;
+  }
 
-/*footer*/
+  /*footer*/
 
-footer{
-  margin-left: 1.5rem;
-  margin-top: 2rem;
-  padding-top: 1rem;
-  color: slategray;
-  border-top: 2px solid gainsboro;
-  justify-content: space-between;
-}
+  footer{
+    margin-left: 1.5rem;
+    margin-top: 2rem;
+    padding-top: 1rem;
+    color: slategray;
+    border-top: 2px solid gainsboro;
+    justify-content: space-between;
+    text-align: right;
+  }
+
+  nav .femu {
+    text-align: right;
+  }
