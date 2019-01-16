@@ -1,6 +1,6 @@
 /*Universal Styles*/
 html{
-  font-family: "Lato", sans-serif;
+  font-family: 'Libre Baskerville', serif;
   font-size: 16px;
 }
 body{
@@ -22,7 +22,7 @@ h2{
   font-weight: bold;
 }
 h4, h5{
-  font-family: "Vollkorn", sans-serif;
+  font-family: 'Work Sans', sans-serif;
 }
 
 a{
@@ -343,7 +343,7 @@ h3{
 
 /*Learning*/
 
-div .learning {
+.learning {
   background-color: #d6d6ea;
   display: flex;
   flex-direction: column;
@@ -509,13 +509,13 @@ div .learning {
 }
 
 .thesis-image{
-  width: 35%;     /*Redline spec image width is 35%*/
+  width: 35%;
   height: auto;
   padding: 1rem;
 }
 
 .thesis-sidebar img {
-  width: 100%;    /*from redline spec*/
+  width: 100%;
   height: auto;
   margin: 0;
   padding: 0;
@@ -551,7 +551,7 @@ div .learning {
 
 }
 
-/** mobile for thesis exhibits and reimagine urban**/
+/** mobile Thesis exhibits and Reimagine Urban   **/
 
 @media only screen and (max-width: 450px){
 
